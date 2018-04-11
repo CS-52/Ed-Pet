@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  edPet
 //
-//  Created by Stephen Dirk M. Weyns on 9/4/18.
-//  Copyright © 2018 Stephen Dirk M. Weyns. All rights reserved.
+//  Created by edPet team on 9/4/18.
+//  Copyright © 2018 edPet. All rights reserved.
 //
 
 import UIKit
