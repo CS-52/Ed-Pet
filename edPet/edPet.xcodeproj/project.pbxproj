@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36BF96534D91248B5BF48265 /* Pods_edPetUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 442E5118CFA1F0ECB1D46CFB /* Pods_edPetUITests.framework */; };
+		60B5AB225F8666D0B5D58730 /* Pods_edPetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A04FA4660CB7761F027A3EA /* Pods_edPetTests.framework */; };
+		7565FF395E1577D9CAB0ACED /* Pods_edPet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26B4D148C4DBFA3F1D42741B /* Pods_edPet.framework */; };
+		AEB33F03207DA1E500D6386D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AEB33F02207DA1E500D6386D /* GoogleService-Info.plist */; };
+		AEB33F04207DA1E500D6386D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AEB33F02207DA1E500D6386D /* GoogleService-Info.plist */; };
+		AEB33F05207DA1E500D6386D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AEB33F02207DA1E500D6386D /* GoogleService-Info.plist */; };
 		D5E0F41D207C288400501C09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E0F41C207C288400501C09 /* AppDelegate.swift */; };
 		D5E0F41F207C288400501C09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E0F41E207C288400501C09 /* ViewController.swift */; };
 		D5E0F422207C288400501C09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5E0F420207C288400501C09 /* Main.storyboard */; };
@@ -34,6 +40,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		26B4D148C4DBFA3F1D42741B /* Pods_edPet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_edPet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28C31380FCE3AFF2C0B478CB /* Pods-edPet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-edPet.release.xcconfig"; path = "Pods/Target Support Files/Pods-edPet/Pods-edPet.release.xcconfig"; sourceTree = "<group>"; };
+		442E5118CFA1F0ECB1D46CFB /* Pods_edPetUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_edPetUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5553AF6CE8E501D0BEF48811 /* Pods-edPetUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-edPetUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-edPetUITests/Pods-edPetUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		61CC9E2520193BFDDB999CCC /* Pods-edPetUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-edPetUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-edPetUITests/Pods-edPetUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6A04FA4660CB7761F027A3EA /* Pods_edPetTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_edPetTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D8190F55A98615C38B47495 /* Pods-edPetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-edPetTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-edPetTests/Pods-edPetTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AAF32897223C19A5D50DD4E4 /* Pods-edPetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-edPetTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-edPetTests/Pods-edPetTests.release.xcconfig"; sourceTree = "<group>"; };
+		AEB33F02207DA1E500D6386D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D5E0F419207C288400501C09 /* edPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = edPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5E0F41C207C288400501C09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5E0F41E207C288400501C09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +62,7 @@
 		D5E0F438207C288400501C09 /* edPetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = edPetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5E0F43C207C288400501C09 /* edPetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = edPetUITests.swift; sourceTree = "<group>"; };
 		D5E0F43E207C288400501C09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0BDC6997D0D0B3224937508 /* Pods-edPet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-edPet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-edPet/Pods-edPet.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7565FF395E1577D9CAB0ACED /* Pods_edPet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60B5AB225F8666D0B5D58730 /* Pods_edPetTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +86,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36BF96534D91248B5BF48265 /* Pods_edPetUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B85A5FD30ED1CE5C0C4FB6A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0BDC6997D0D0B3224937508 /* Pods-edPet.debug.xcconfig */,
+				28C31380FCE3AFF2C0B478CB /* Pods-edPet.release.xcconfig */,
+				7D8190F55A98615C38B47495 /* Pods-edPetTests.debug.xcconfig */,
+				AAF32897223C19A5D50DD4E4 /* Pods-edPetTests.release.xcconfig */,
+				5553AF6CE8E501D0BEF48811 /* Pods-edPetUITests.debug.xcconfig */,
+				61CC9E2520193BFDDB999CCC /* Pods-edPetUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CB9B14325D5D6A34C8CB05DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26B4D148C4DBFA3F1D42741B /* Pods_edPet.framework */,
+				6A04FA4660CB7761F027A3EA /* Pods_edPetTests.framework */,
+				442E5118CFA1F0ECB1D46CFB /* Pods_edPetUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D5E0F410207C288300501C09 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +123,8 @@
 				D5E0F430207C288400501C09 /* edPetTests */,
 				D5E0F43B207C288400501C09 /* edPetUITests */,
 				D5E0F41A207C288400501C09 /* Products */,
+				7B85A5FD30ED1CE5C0C4FB6A /* Pods */,
+				CB9B14325D5D6A34C8CB05DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +141,7 @@
 		D5E0F41B207C288400501C09 /* edPet */ = {
 			isa = PBXGroup;
 			children = (
+				AEB33F02207DA1E500D6386D /* GoogleService-Info.plist */,
 				D5E0F41C207C288400501C09 /* AppDelegate.swift */,
 				D5E0F41E207C288400501C09 /* ViewController.swift */,
 				D5E0F420207C288400501C09 /* Main.storyboard */,
@@ -132,9 +177,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5E0F441207C288400501C09 /* Build configuration list for PBXNativeTarget "edPet" */;
 			buildPhases = (
+				EFF7071BF62A92F0AEE37648 /* [CP] Check Pods Manifest.lock */,
 				D5E0F415207C288300501C09 /* Sources */,
 				D5E0F416207C288300501C09 /* Frameworks */,
 				D5E0F417207C288300501C09 /* Resources */,
+				211B57C817B9998A2AB96A03 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +196,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5E0F444207C288400501C09 /* Build configuration list for PBXNativeTarget "edPetTests" */;
 			buildPhases = (
+				14510E5A227BDB67C867E7DD /* [CP] Check Pods Manifest.lock */,
 				D5E0F429207C288400501C09 /* Sources */,
 				D5E0F42A207C288400501C09 /* Frameworks */,
 				D5E0F42B207C288400501C09 /* Resources */,
@@ -167,6 +215,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5E0F447207C288400501C09 /* Build configuration list for PBXNativeTarget "edPetUITests" */;
 			buildPhases = (
+				ADEF5C92651F2A9A7AC037E5 /* [CP] Check Pods Manifest.lock */,
 				D5E0F434207C288400501C09 /* Sources */,
 				D5E0F435207C288400501C09 /* Frameworks */,
 				D5E0F436207C288400501C09 /* Resources */,
@@ -233,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5E0F427207C288400501C09 /* LaunchScreen.storyboard in Resources */,
+				AEB33F03207DA1E500D6386D /* GoogleService-Info.plist in Resources */,
 				D5E0F424207C288400501C09 /* Assets.xcassets in Resources */,
 				D5E0F422207C288400501C09 /* Main.storyboard in Resources */,
 			);
@@ -242,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEB33F04207DA1E500D6386D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,10 +300,88 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEB33F05207DA1E500D6386D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14510E5A227BDB67C867E7DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-edPetTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		211B57C817B9998A2AB96A03 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-edPet/Pods-edPet-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-edPet/Pods-edPet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADEF5C92651F2A9A7AC037E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-edPetUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFF7071BF62A92F0AEE37648 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-edPet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D5E0F415207C288300501C09 /* Sources */ = {
@@ -412,6 +541,7 @@
 		};
 		D5E0F442207C288400501C09 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0BDC6997D0D0B3224937508 /* Pods-edPet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = edPet/Info.plist;
@@ -424,6 +554,7 @@
 		};
 		D5E0F443207C288400501C09 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28C31380FCE3AFF2C0B478CB /* Pods-edPet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = edPet/Info.plist;
@@ -436,6 +567,7 @@
 		};
 		D5E0F445207C288400501C09 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D8190F55A98615C38B47495 /* Pods-edPetTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -450,6 +582,7 @@
 		};
 		D5E0F446207C288400501C09 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAF32897223C19A5D50DD4E4 /* Pods-edPetTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -464,6 +597,7 @@
 		};
 		D5E0F448207C288400501C09 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5553AF6CE8E501D0BEF48811 /* Pods-edPetUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = edPetUITests/Info.plist;
@@ -477,6 +611,7 @@
 		};
 		D5E0F449207C288400501C09 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61CC9E2520193BFDDB999CCC /* Pods-edPetUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = edPetUITests/Info.plist;
@@ -507,6 +642,7 @@
 				D5E0F443207C288400501C09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5E0F444207C288400501C09 /* Build configuration list for PBXNativeTarget "edPetTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +651,7 @@
 				D5E0F446207C288400501C09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5E0F447207C288400501C09 /* Build configuration list for PBXNativeTarget "edPetUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +660,7 @@
 				D5E0F449207C288400501C09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

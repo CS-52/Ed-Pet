@@ -1,0 +1,6 @@
+framework module Pods_edPet {
+  umbrella header "Pods-edPet-umbrella.h"
+
+  export *
+  module * { export * }
+}
