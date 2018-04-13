@@ -13,6 +13,7 @@
 		AE704D5E207DAD8E00116E8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE704D5D207DAD8E00116E8C /* GoogleService-Info.plist */; };
 		AE704D5F207DAD8E00116E8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE704D5D207DAD8E00116E8C /* GoogleService-Info.plist */; };
 		AE704D60207DAD8E00116E8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE704D5D207DAD8E00116E8C /* GoogleService-Info.plist */; };
+		AE706F49208014470009B67C /* activitiesScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE706F48208014470009B67C /* activitiesScreen.storyboard */; };
 		D5E0F41D207C288400501C09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E0F41C207C288400501C09 /* AppDelegate.swift */; };
 		D5E0F41F207C288400501C09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E0F41E207C288400501C09 /* ViewController.swift */; };
 		D5E0F422207C288400501C09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5E0F420207C288400501C09 /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 		7D8190F55A98615C38B47495 /* Pods-edPetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-edPetTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-edPetTests/Pods-edPetTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AAF32897223C19A5D50DD4E4 /* Pods-edPetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-edPetTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-edPetTests/Pods-edPetTests.release.xcconfig"; sourceTree = "<group>"; };
 		AE704D5D207DAD8E00116E8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AE706F48208014470009B67C /* activitiesScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = activitiesScreen.storyboard; sourceTree = "<group>"; };
 		D5E0F419207C288400501C09 /* edPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = edPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5E0F41C207C288400501C09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5E0F41E207C288400501C09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				D5E0F41C207C288400501C09 /* AppDelegate.swift */,
 				D5E0F41E207C288400501C09 /* ViewController.swift */,
 				D5E0F420207C288400501C09 /* Main.storyboard */,
+				AE706F48208014470009B67C /* activitiesScreen.storyboard */,
 				D5E0F423207C288400501C09 /* Assets.xcassets */,
 				D5E0F425207C288400501C09 /* LaunchScreen.storyboard */,
 				D5E0F428207C288400501C09 /* Info.plist */,
@@ -281,6 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE706F49208014470009B67C /* activitiesScreen.storyboard in Resources */,
 				D5E0F427207C288400501C09 /* LaunchScreen.storyboard in Resources */,
 				AE704D5E207DAD8E00116E8C /* GoogleService-Info.plist in Resources */,
 				D5E0F424207C288400501C09 /* Assets.xcassets in Resources */,
