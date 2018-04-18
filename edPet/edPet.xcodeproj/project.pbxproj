@@ -14,7 +14,12 @@
 		AE704D5E207DAD8E00116E8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE704D5D207DAD8E00116E8C /* GoogleService-Info.plist */; };
 		AE704D5F207DAD8E00116E8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE704D5D207DAD8E00116E8C /* GoogleService-Info.plist */; };
 		AE704D60207DAD8E00116E8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE704D5D207DAD8E00116E8C /* GoogleService-Info.plist */; };
-		AE706F49208014470009B67C /* activitiesScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE706F48208014470009B67C /* activitiesScreen.storyboard */; };
+		AEBC950C2086DD280025A52C /* Login Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEBC950B2086DD280025A52C /* Login Storyboard.storyboard */; };
+		AEBC950F2086DD560025A52C /* Home Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEBC950E2086DD560025A52C /* Home Screen.storyboard */; };
+		AEBC95112086DD6D0025A52C /* Activities Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEBC95102086DD6D0025A52C /* Activities Dashboard.storyboard */; };
+		AEBC95152086DDBC0025A52C /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBC95142086DDBC0025A52C /* loginViewController.swift */; };
+		AEBC95172086DE170025A52C /* homescreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBC95162086DE170025A52C /* homescreenViewController.swift */; };
+		AEBC95192086DE630025A52C /* activitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBC95182086DE630025A52C /* activitiesViewController.swift */; };
 		D5E0F41D207C288400501C09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E0F41C207C288400501C09 /* AppDelegate.swift */; };
 		D5E0F41F207C288400501C09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E0F41E207C288400501C09 /* ViewController.swift */; };
 		D5E0F422207C288400501C09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5E0F420207C288400501C09 /* Main.storyboard */; };
@@ -52,7 +57,12 @@
 		AAF32897223C19A5D50DD4E4 /* Pods-edPetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-edPetTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-edPetTests/Pods-edPetTests.release.xcconfig"; sourceTree = "<group>"; };
 		AE5B610A2080498000A4657A /* newViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newViewController.swift; sourceTree = "<group>"; };
 		AE704D5D207DAD8E00116E8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		AE706F48208014470009B67C /* activitiesScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = activitiesScreen.storyboard; sourceTree = "<group>"; };
+		AEBC950B2086DD280025A52C /* Login Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Login Storyboard.storyboard"; sourceTree = "<group>"; };
+		AEBC950E2086DD560025A52C /* Home Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Home Screen.storyboard"; sourceTree = "<group>"; };
+		AEBC95102086DD6D0025A52C /* Activities Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Activities Dashboard.storyboard"; sourceTree = "<group>"; };
+		AEBC95142086DDBC0025A52C /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		AEBC95162086DE170025A52C /* homescreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homescreenViewController.swift; sourceTree = "<group>"; };
+		AEBC95182086DE630025A52C /* activitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = activitiesViewController.swift; sourceTree = "<group>"; };
 		D5E0F419207C288400501C09 /* edPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = edPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5E0F41C207C288400501C09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5E0F41E207C288400501C09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +120,33 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AEBC950D2086DD300025A52C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				AEBC950B2086DD280025A52C /* Login Storyboard.storyboard */,
+				AEBC95142086DDBC0025A52C /* loginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		AEBC95122086DD720025A52C /* Actitivities Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				AEBC95102086DD6D0025A52C /* Activities Dashboard.storyboard */,
+				AEBC95182086DE630025A52C /* activitiesViewController.swift */,
+			);
+			path = "Actitivities Dashboard";
+			sourceTree = "<group>";
+		};
+		AEBC95132086DD8D0025A52C /* Home Screen */ = {
+			isa = PBXGroup;
+			children = (
+				AEBC950E2086DD560025A52C /* Home Screen.storyboard */,
+				AEBC95162086DE170025A52C /* homescreenViewController.swift */,
+			);
+			path = "Home Screen";
+			sourceTree = "<group>";
+		};
 		CB9B14325D5D6A34C8CB05DB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,8 +186,10 @@
 				D5E0F41C207C288400501C09 /* AppDelegate.swift */,
 				D5E0F41E207C288400501C09 /* ViewController.swift */,
 				D5E0F420207C288400501C09 /* Main.storyboard */,
+				AEBC95122086DD720025A52C /* Actitivities Dashboard */,
+				AEBC95132086DD8D0025A52C /* Home Screen */,
+				AEBC950D2086DD300025A52C /* Login */,
 				AE5B610A2080498000A4657A /* newViewController.swift */,
-				AE706F48208014470009B67C /* activitiesScreen.storyboard */,
 				D5E0F423207C288400501C09 /* Assets.xcassets */,
 				D5E0F425207C288400501C09 /* LaunchScreen.storyboard */,
 				D5E0F428207C288400501C09 /* Info.plist */,
@@ -287,7 +326,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE706F49208014470009B67C /* activitiesScreen.storyboard in Resources */,
+				AEBC950C2086DD280025A52C /* Login Storyboard.storyboard in Resources */,
+				AEBC95112086DD6D0025A52C /* Activities Dashboard.storyboard in Resources */,
+				AEBC950F2086DD560025A52C /* Home Screen.storyboard in Resources */,
 				D5E0F427207C288400501C09 /* LaunchScreen.storyboard in Resources */,
 				AE704D5E207DAD8E00116E8C /* GoogleService-Info.plist in Resources */,
 				D5E0F424207C288400501C09 /* Assets.xcassets in Resources */,
@@ -395,7 +436,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEBC95152086DDBC0025A52C /* loginViewController.swift in Sources */,
 				D5E0F41F207C288400501C09 /* ViewController.swift in Sources */,
+				AEBC95172086DE170025A52C /* homescreenViewController.swift in Sources */,
+				AEBC95192086DE630025A52C /* activitiesViewController.swift in Sources */,
 				D5E0F41D207C288400501C09 /* AppDelegate.swift in Sources */,
 				AE5B610B2080498000A4657A /* newViewController.swift in Sources */,
 			);
