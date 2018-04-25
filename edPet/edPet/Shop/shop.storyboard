@@ -13,30 +13,29 @@
         <!--View Controller-->
         <scene sceneID="pUB-I2-GDs">
             <objects>
-                <viewController id="trz-Ju-qFm" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="shopViewer" id="trz-Ju-qFm" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="upw-l8-a89">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="background_shop" translatesAutoresizingMaskIntoConstraints="NO" id="sjp-AO-rGH">
-                                <rect key="frame" x="-15" y="20" width="402" height="658"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="perspective-wooden-table-on-top-over-blur-coffee-shop-background_7636-68" translatesAutoresizingMaskIntoConstraints="NO" id="f8B-zU-pDg">
+                                <rect key="frame" x="-84" y="31" width="728" height="625"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="screen_label" translatesAutoresizingMaskIntoConstraints="NO" id="8Wi-mU-GjH">
-                                <rect key="frame" x="-1" y="20" width="375" height="92"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" image="screen_label" translatesAutoresizingMaskIntoConstraints="NO" id="8Wi-mU-GjH">
+                                <rect key="frame" x="-1" y="17" width="377" height="68"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="shop_keeper" translatesAutoresizingMaskIntoConstraints="NO" id="FNo-AJ-I50">
-                                <rect key="frame" x="129" y="134" width="230" height="365"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" image="shop_keeper" translatesAutoresizingMaskIntoConstraints="NO" id="FNo-AJ-I50">
+                                <rect key="frame" x="145" y="140" width="230" height="365"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="shop_table" translatesAutoresizingMaskIntoConstraints="NO" id="WsZ-cD-mhE">
-                                <rect key="frame" x="78" y="377" width="296" height="242"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="shop_table" translatesAutoresizingMaskIntoConstraints="NO" id="WsZ-cD-mhE">
+                                <rect key="frame" x="79" y="377" width="296" height="242"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="242" id="FZ9-3H-1JG"/>
+                                    <constraint firstAttribute="width" constant="296" id="GCT-kq-cXG"/>
+                                </constraints>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="FGx-bl-3Aj">
-                                <rect key="frame" x="182" y="117" width="191" height="70"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="FGx-bl-3Aj">
+                                <rect key="frame" x="185" y="100" width="191" height="70"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="shop_rect" translatesAutoresizingMaskIntoConstraints="NO" id="Zhw-pX-6s7">
                                 <rect key="frame" x="48" y="490" width="279" height="142"/>
@@ -57,9 +56,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2,350" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAH-jm-9Q6">
-                                <rect key="frame" x="272" y="129" width="80" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2,350" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAH-jm-9Q6">
+                                <rect key="frame" x="279" y="115" width="80" height="41"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -74,28 +72,49 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="arrow_blue_left"/>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="coin_icon" translatesAutoresizingMaskIntoConstraints="NO" id="0IO-QO-9Ee">
-                                <rect key="frame" x="211" y="130" width="47" height="40"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" image="coin_icon" translatesAutoresizingMaskIntoConstraints="NO" id="0IO-QO-9Ee">
+                                <rect key="frame" x="216" y="115" width="47" height="40"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Shop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXQ-8U-Mv8">
-                                <rect key="frame" x="155" y="48" width="116" height="37"/>
+                                <rect key="frame" x="129" y="33" width="119" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="27"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="27"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRt-Pf-l4q">
-                                <rect key="frame" x="16" y="44" width="28" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRt-Pf-l4q">
+                                <rect key="frame" x="16" y="31" width="27" height="41"/>
                                 <state key="normal" backgroundImage="arrow_left"/>
+                                <connections>
+                                    <segue destination="cZb-Y3-X60" kind="unwind" unwindAction="myUnwindFor:towardsViewController:" id="poK-bM-XM5"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="f8B-zU-pDg" firstAttribute="leading" secondItem="upw-l8-a89" secondAttribute="leading" constant="-84" id="5b6-A2-IpT"/>
+                            <constraint firstItem="0IO-QO-9Ee" firstAttribute="top" secondItem="8Wi-mU-GjH" secondAttribute="bottom" constant="30" id="BQB-YI-oU5"/>
+                            <constraint firstItem="FNo-AJ-I50" firstAttribute="top" secondItem="8Wi-mU-GjH" secondAttribute="bottom" constant="55" id="F1K-1H-8yE"/>
+                            <constraint firstItem="8Wi-mU-GjH" firstAttribute="leading" secondItem="upw-l8-a89" secondAttribute="leading" constant="-1" id="FQJ-bh-YG7"/>
+                            <constraint firstItem="FGx-bl-3Aj" firstAttribute="top" secondItem="8Wi-mU-GjH" secondAttribute="bottom" constant="15" id="IrS-TG-6Q8"/>
+                            <constraint firstItem="WsZ-cD-mhE" firstAttribute="trailing" secondItem="jgz-QG-At4" secondAttribute="trailing" id="Joo-js-cmo"/>
+                            <constraint firstAttribute="trailing" secondItem="f8B-zU-pDg" secondAttribute="trailing" constant="-269" id="LlY-WV-rws"/>
+                            <constraint firstItem="mAH-jm-9Q6" firstAttribute="leading" secondItem="0IO-QO-9Ee" secondAttribute="trailing" constant="16" id="MJZ-gX-q88"/>
+                            <constraint firstItem="uRt-Pf-l4q" firstAttribute="top" secondItem="jgz-QG-At4" secondAttribute="top" constant="11" id="aMH-Kj-EVj"/>
+                            <constraint firstItem="f8B-zU-pDg" firstAttribute="top" secondItem="jgz-QG-At4" secondAttribute="top" constant="11" id="ceG-Sv-xOU"/>
+                            <constraint firstItem="jgz-QG-At4" firstAttribute="trailing" secondItem="mAH-jm-9Q6" secondAttribute="trailing" constant="16" id="l1e-UJ-vIs"/>
+                            <constraint firstItem="mAH-jm-9Q6" firstAttribute="top" secondItem="8Wi-mU-GjH" secondAttribute="bottom" constant="30" id="m1Z-x9-Kvz"/>
+                            <constraint firstAttribute="trailing" secondItem="FGx-bl-3Aj" secondAttribute="trailing" constant="-1" id="tXn-aC-dK9"/>
+                            <constraint firstItem="jgz-QG-At4" firstAttribute="bottom" secondItem="f8B-zU-pDg" secondAttribute="bottom" constant="11" id="vGc-CH-X16"/>
+                            <constraint firstItem="FNo-AJ-I50" firstAttribute="trailing" secondItem="jgz-QG-At4" secondAttribute="trailing" id="vZE-dK-LZ1"/>
+                            <constraint firstItem="jgz-QG-At4" firstAttribute="bottom" secondItem="WsZ-cD-mhE" secondAttribute="bottom" constant="48" id="yLn-WS-5dR"/>
+                            <constraint firstAttribute="trailing" secondItem="8Wi-mU-GjH" secondAttribute="trailing" constant="-1" id="yRG-6p-SSQ"/>
+                            <constraint firstItem="uRt-Pf-l4q" firstAttribute="leading" secondItem="jgz-QG-At4" secondAttribute="leading" constant="16" id="zxB-5y-Q9y"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="jgz-QG-At4"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="chi-oc-EYT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="cZb-Y3-X60" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="376.80000000000001" y="-257.72113943028489"/>
         </scene>
@@ -105,8 +124,8 @@
         <image name="arrow_blue_left" width="55" height="68"/>
         <image name="arrow_blue_right" width="51" height="68"/>
         <image name="arrow_left" width="27" height="41"/>
-        <image name="background_shop" width="375" height="633"/>
         <image name="coin_icon" width="47" height="40"/>
+        <image name="perspective-wooden-table-on-top-over-blur-coffee-shop-background_7636-68" width="626" height="417"/>
         <image name="screen_label" width="375" height="92"/>
         <image name="shop_keeper" width="230" height="365"/>
         <image name="shop_rect" width="279" height="142"/>

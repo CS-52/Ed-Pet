@@ -24,7 +24,6 @@
 		AEBC95192086DE630025A52C /* activitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBC95182086DE630025A52C /* activitiesViewController.swift */; };
 		AEBC951B2086DF670025A52C /* shop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEBC951A2086DF670025A52C /* shop.storyboard */; };
 		AEBC951E2086DF970025A52C /* shopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBC951D2086DF970025A52C /* shopViewController.swift */; };
-		AEBC95202086E1F00025A52C /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBC951F2086E1F00025A52C /* Activity.swift */; };
 		D5E0F41D207C288400501C09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E0F41C207C288400501C09 /* AppDelegate.swift */; };
 		D5E0F41F207C288400501C09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E0F41E207C288400501C09 /* ViewController.swift */; };
 		D5E0F422207C288400501C09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5E0F420207C288400501C09 /* Main.storyboard */; };
@@ -72,7 +71,6 @@
 		AEBC95182086DE630025A52C /* activitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = activitiesViewController.swift; sourceTree = "<group>"; };
 		AEBC951A2086DF670025A52C /* shop.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = shop.storyboard; sourceTree = "<group>"; };
 		AEBC951D2086DF970025A52C /* shopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopViewController.swift; sourceTree = "<group>"; };
-		AEBC951F2086E1F00025A52C /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		D5E0F419207C288400501C09 /* edPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = edPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5E0F41C207C288400501C09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5E0F41E207C288400501C09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -145,7 +143,6 @@
 				AEBC95102086DD6D0025A52C /* Activities Dashboard.storyboard */,
 				AE234D44208978BA00CF3965 /* ActivityTableViewController.swift */,
 				AE234D42208968B400CF3965 /* ActivityTableViewCell.swift */,
-				AEBC951F2086E1F00025A52C /* Activity.swift */,
 				AEBC95182086DE630025A52C /* activitiesViewController.swift */,
 			);
 			path = "Actitivities Dashboard";
@@ -467,7 +464,6 @@
 				AEBC95192086DE630025A52C /* activitiesViewController.swift in Sources */,
 				D5E0F41D207C288400501C09 /* AppDelegate.swift in Sources */,
 				AE234D45208978BA00CF3965 /* ActivityTableViewController.swift in Sources */,
-				AEBC95202086E1F00025A52C /* Activity.swift in Sources */,
 				AE5B610B2080498000A4657A /* newViewController.swift in Sources */,
 				AE234D43208968B400CF3965 /* ActivityTableViewCell.swift in Sources */,
 			);
