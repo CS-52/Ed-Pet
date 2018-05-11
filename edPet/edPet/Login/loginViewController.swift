@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class loginViewController: UIViewController {
     
@@ -29,6 +30,17 @@ class loginViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    @IBAction func SignUp(_ sender: UIButton) {
+        Auth.auth().createUser(withEmail: txtUsername.text!, password: txtPassword.text!) { (authResult, error) in
+            // ...
+        }
+    }
+    @IBAction func LoginPressed(_ sender: UIButton) {
+        
+        Auth.auth().signIn(withEmail: txtUsername.text!, password: txtPassword.text!) { (user, error) in
+            // ...
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
