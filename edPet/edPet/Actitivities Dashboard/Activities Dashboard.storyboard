@@ -67,7 +67,9 @@
                                 <connections>
                                     <outlet property="activityTitle" destination="BgQ-IC-uGG" id="e5p-cz-z3n"/>
                                     <outlet property="completionImage" destination="WIa-fZ-0io" id="1EG-6S-3j9"/>
+                                    <outlet property="dueDate" destination="SHF-75-Y2M" id="MeD-GJ-KtC"/>
                                     <outlet property="previewImage" destination="oJb-mf-fYK" id="tMI-pO-H4N"/>
+                                    <outlet property="time" destination="eBt-xl-FpD" id="XcN-9S-Yor"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -96,24 +98,6 @@
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xEu-fk-3SI">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="activity copy 2" translatesAutoresizingMaskIntoConstraints="NO" id="003-VD-Kmv">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="153"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="activity" translatesAutoresizingMaskIntoConstraints="NO" id="SoF-Gl-R1Z">
-                                                <rect key="frame" x="0.0" y="322" width="375" height="153"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="activity (2) copy" translatesAutoresizingMaskIntoConstraints="NO" id="3TQ-y1-1xd">
-                                                <rect key="frame" x="-8" y="161" width="375" height="153"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="activity" translatesAutoresizingMaskIntoConstraints="NO" id="5Rf-nl-nM0">
-                                                <rect key="frame" x="0.0" y="483" width="375" height="153"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                        </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                 </subviews>
@@ -188,9 +172,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="activity" width="372" height="151"/>
-        <image name="activity (2) copy" width="372" height="151"/>
-        <image name="activity copy 2" width="372" height="151"/>
         <image name="book" width="19" height="21"/>
         <image name="button_blue" width="84" height="61"/>
         <image name="grey_bar" width="375" height="152"/>

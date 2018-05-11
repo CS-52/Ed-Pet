@@ -9,9 +9,13 @@
 import UIKit
 
 class ActivityTableViewController: UITableViewController {
+    
+    var activities = [Activity]();
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        loadSampleActivities()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -28,24 +32,53 @@ class ActivityTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return activities.count
+    }
+    
+    private func loadSampleActivities() {
+        let activity_complete = UIImage(named:"check_complete")
+        
+        guard let activity1 = Activity(title: "Sample Activity here", days_until_due: 5, completion: false, time_estimate: 10)
+            else {
+                fatalError("can't make activity 1")
+            }
+        
+        guard let activity2 = Activity(title: "Our Solar System", days_until_due: 8, completion: false, time_estimate: 15) else{
+                fatalError("can't make activity 2")
+            }
+
+        
+        activities += [activity1, activity2]
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        
+        let cellIdentifier = "ActivityTableViewCell"
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? ActivityTableViewCell else {
+            fatalError("This table view cell is not of type ActivityTableViewCell")
+        }
+        
+        //fetch next activity for the data source layout
+        let activity = activities[indexPath.row]
+        
+        cell.activityTitle.text = activity.title
+        if(activity.completion == true){
+            cell.completionImage?.image = UIImage(named: "check")
+        }
+        cell.time.text = String(activity.time_estimate)
+        cell.days_until_due.text = "Due in " + String(activity.days_until_due) + " days"
 
-        // Configure the cell...
+        
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -91,5 +124,7 @@ class ActivityTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
 
 }

@@ -12,9 +12,11 @@ class ActivityTableViewCell: UITableViewCell {
 
     //MARK: Properties
     @IBOutlet weak var activityTitle: UILabel!
-    @IBOutlet weak var previewImage: UIImageView!
-    @IBOutlet weak var completionImage: UIImageView!
+    @IBOutlet weak var previewImage: UIImageView?
+    @IBOutlet weak var completionImage: UIImageView?
     
+    @IBOutlet weak var days_until_due: UILabel!
+    @IBOutlet weak var time: UILabel!
     
     
     override func awakeFromNib() {
