@@ -17,6 +17,7 @@ class ActivityTableViewCell: UITableViewCell {
     
     @IBOutlet weak var days_until_due: UILabel!
     @IBOutlet weak var time: UILabel!
+    @IBOutlet weak var progress: KDCircularProgress!
     
     
     override func awakeFromNib() {

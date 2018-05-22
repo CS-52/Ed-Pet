@@ -8,6 +8,7 @@ target 'edPet' do
   # Pods for edPet
 	pod 'Firebase/Core'
     pod 'Firebase/Auth'
+	pod 'KDCircularProgress'
 
   target 'edPetTests' do
     inherit! :search_paths

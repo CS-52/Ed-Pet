@@ -31,14 +31,29 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
                                             <state key="normal" backgroundImage="grey_bar"/>
                                         </button>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WIa-fZ-0io">
-                                            <rect key="frame" x="26" y="101" width="41" height="38"/>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lov-iT-csj" customClass="KDCircularProgress" customModule="KDCircularProgress">
+                                            <rect key="frame" x="16" y="31" width="100" height="96"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oJb-mf-fYK">
-                                            <rect key="frame" x="16" y="31" width="61" height="62"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="trackColor">
+                                                    <color key="value" red="0.15641191709999999" green="0.15641191709999999" blue="0.15641191709999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="angle">
+                                                    <real key="value" value="90"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="startAngle">
+                                                    <real key="value" value="-90"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="trackThickness">
+                                                    <real key="value" value="23"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="progressInsideFillColor">
+                                                    <color key="value" red="0.13331223440000001" green="1" blue="0.029986080179999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="roundedCorners" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="15 min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eBt-xl-FpD">
                                             <rect key="frame" x="317" y="119" width="42" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -53,12 +68,16 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Default Activity Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BgQ-IC-uGG">
-                                            <rect key="frame" x="85" y="31" width="197" height="26"/>
+                                            <rect key="frame" x="162" y="31" width="197" height="26"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="19"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WIa-fZ-0io">
+                                            <rect key="frame" x="196" y="69" width="41" height="38"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="Zep-kw-UET" firstAttribute="leading" secondItem="SHF-75-Y2M" secondAttribute="trailing" constant="-225" id="0XK-tQ-fig"/>
@@ -68,7 +87,7 @@
                                     <outlet property="activityTitle" destination="BgQ-IC-uGG" id="e5p-cz-z3n"/>
                                     <outlet property="completionImage" destination="WIa-fZ-0io" id="1EG-6S-3j9"/>
                                     <outlet property="dueDate" destination="SHF-75-Y2M" id="MeD-GJ-KtC"/>
-                                    <outlet property="previewImage" destination="oJb-mf-fYK" id="tMI-pO-H4N"/>
+                                    <outlet property="progress" destination="lov-iT-csj" id="Qf2-xc-0w4"/>
                                     <outlet property="time" destination="eBt-xl-FpD" id="XcN-9S-Yor"/>
                                 </connections>
                             </tableViewCell>
