@@ -63,24 +63,7 @@
                                         </state>
                                         <connections>
                                             <action selector="LoginPressed:" destination="GmV-qv-aHq" eventType="touchUpInside" id="y1s-Zs-m3F"/>
-                                            <segue destination="In6-29-f3r" kind="show" id="Fko-Tb-ZPA"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUp-fY-ZSW">
-                                        <rect key="frame" x="8" y="200" width="327" height="61"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="61" id="0VU-q8-592"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="327" id="GLT-l3-cEw"/>
-                                            <constraint firstAttribute="height" constant="61" id="Yzp-If-zIg"/>
-                                            <constraint firstAttribute="width" constant="327" id="eWI-91-1FH"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
-                                        <state key="normal" title="Sign Up" backgroundImage="button_blue">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="LoginPressed:" destination="GmV-qv-aHq" eventType="touchUpInside" id="2Ez-gF-TDi"/>
-                                            <action selector="SignUp:" destination="GmV-qv-aHq" eventType="touchUpInside" id="aiw-Ix-JDi"/>
+                                            <segue destination="In6-29-f3r" kind="presentation" identifier="homeScreenSegue" modalTransitionStyle="flipHorizontal" id="Fko-Tb-ZPA"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -96,12 +79,8 @@
                                     <constraint firstAttribute="trailing" secondItem="vR5-RD-e35" secondAttribute="trailing" constant="8" id="Jfp-cb-ZrC"/>
                                     <constraint firstAttribute="trailing" secondItem="Hj4-FG-zkd" secondAttribute="trailing" constant="8" id="Tyc-NQ-tcV"/>
                                     <constraint firstAttribute="height" constant="192" id="UGr-Bl-hl0"/>
-                                    <constraint firstItem="dUp-fY-ZSW" firstAttribute="top" secondItem="E3x-gR-KEc" secondAttribute="bottom" constant="9" id="YOa-jZ-l0f"/>
                                     <constraint firstItem="vR5-RD-e35" firstAttribute="leading" secondItem="nzb-Kn-QLy" secondAttribute="leading" constant="8" id="hie-Wr-tfY"/>
                                     <constraint firstAttribute="trailing" secondItem="vR5-RD-e35" secondAttribute="trailing" constant="8" id="im3-vg-taO"/>
-                                    <constraint firstItem="dUp-fY-ZSW" firstAttribute="leading" secondItem="nzb-Kn-QLy" secondAttribute="leading" constant="8" id="mYJ-C9-qo4"/>
-                                    <constraint firstAttribute="trailing" secondItem="dUp-fY-ZSW" secondAttribute="trailing" constant="8" id="sGt-op-mkR"/>
-                                    <constraint firstAttribute="bottom" secondItem="dUp-fY-ZSW" secondAttribute="bottom" id="uyO-up-GLt"/>
                                     <constraint firstAttribute="trailing" secondItem="Hj4-FG-zkd" secondAttribute="trailing" constant="8" id="zCO-mw-uc5"/>
                                     <constraint firstItem="Hj4-FG-zkd" firstAttribute="leading" secondItem="nzb-Kn-QLy" secondAttribute="leading" constant="8" id="zOA-WC-bLV"/>
                                 </constraints>
