@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import os.log
 
 class ActivityTableViewController: UITableViewController {
     
+    //MARK: Properies
     var activities = [Activity]();
 
     override func viewDidLoad() {
@@ -40,16 +42,15 @@ class ActivityTableViewController: UITableViewController {
     }
     
     private func loadSampleActivities() {
-        let activity_complete = UIImage(named:"check_complete")
+        //let activity_complete = UIImage(named:"check_complete")
         
-        guard let activity1 = Activity(title: "Sample Activity here", days_until_due: 5, completion: false, time_estimate: 10)
-            else {
+        guard let activity1 = Activity(title: "Sample Activity here", days_until_due: 5, completion: false, time_estimate: 10) else {
                 fatalError("can't make activity 1")
-            }
+        }
         
-        guard let activity2 = Activity(title: "Our Solar System", days_until_due: 8, completion: false, time_estimate: 15) else{
+        guard let activity2 = Activity(title: "Our Solar System", days_until_due: 8, completion: false, time_estimate: 15) else {
                 fatalError("can't make activity 2")
-            }
+        }
 
         
         activities += [activity1, activity2]
