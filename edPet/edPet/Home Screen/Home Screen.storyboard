@@ -59,6 +59,7 @@
                                 </constraints>
                                 <state key="normal" image="menu_icon" backgroundImage="button_blue"/>
                                 <connections>
+                                    <action selector="click:" destination="yCg-cJ-zal" eventType="touchUpInside" id="AZz-dy-v51"/>
                                     <segue destination="L9h-0m-poi" kind="show" id="Oas-Pz-DRc"/>
                                 </connections>
                             </button>
@@ -104,6 +105,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="S3Y-9N-KKh"/>
                     </view>
+                    <connections>
+                        <outlet property="coinLabel" destination="Asl-D6-vA3" id="1Lo-XE-gsw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GRB-ev-k3S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

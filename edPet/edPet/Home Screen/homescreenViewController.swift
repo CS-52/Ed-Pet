@@ -7,12 +7,20 @@
 //
 
 import UIKit
-
+import FirebaseAuth
 class homescreenViewController: UIViewController {
     
+    @IBOutlet weak var coinLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        coinLabel.text = String(Singleton.sharedInstance.coins!)
+        Singleton.sharedInstance.accessories
+        
     }
     
     override func didReceiveMemoryWarning() {

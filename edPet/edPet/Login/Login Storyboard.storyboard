@@ -85,9 +85,23 @@
                                     <constraint firstItem="Hj4-FG-zkd" firstAttribute="leading" secondItem="nzb-Kn-QLy" secondAttribute="leading" constant="8" id="zOA-WC-bLV"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KiL-Ap-P5V">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VO4-sy-WCC">
+                                        <rect key="frame" x="102" y="309" width="170" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.54726012323943662" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="KiL-Ap-P5V" firstAttribute="top" secondItem="tYy-cw-HcS" secondAttribute="top" id="CpD-HF-9dW"/>
                             <constraint firstItem="WxJ-eU-UYp" firstAttribute="top" secondItem="tYy-cw-HcS" secondAttribute="top" constant="-7" id="Fhd-cl-3qH"/>
                             <constraint firstItem="ofZ-YD-Usq" firstAttribute="leading" secondItem="chi-t9-raB" secondAttribute="leading" constant="34" id="Fyl-jN-W9t"/>
                             <constraint firstItem="WxJ-eU-UYp" firstAttribute="top" secondItem="tYy-cw-HcS" secondAttribute="top" id="I6r-cs-oIa"/>
@@ -101,14 +115,18 @@
                             <constraint firstItem="WxJ-eU-UYp" firstAttribute="leading" secondItem="tYy-cw-HcS" secondAttribute="leading" constant="-119" id="fIf-D4-nhH"/>
                             <constraint firstAttribute="bottom" secondItem="WxJ-eU-UYp" secondAttribute="bottom" constant="-133" id="gIK-9i-FCX"/>
                             <constraint firstItem="WxJ-eU-UYp" firstAttribute="leading" secondItem="tYy-cw-HcS" secondAttribute="leading" constant="-122" id="lmK-Em-Obj"/>
+                            <constraint firstItem="KiL-Ap-P5V" firstAttribute="bottom" secondItem="chi-t9-raB" secondAttribute="bottom" id="lul-TG-eAw"/>
+                            <constraint firstItem="KiL-Ap-P5V" firstAttribute="leading" secondItem="chi-t9-raB" secondAttribute="leading" id="mtp-iO-Vy4"/>
                             <constraint firstItem="chi-t9-raB" firstAttribute="trailing" secondItem="ofZ-YD-Usq" secondAttribute="trailing" constant="34" id="r63-uJ-ah4"/>
                             <constraint firstItem="chi-t9-raB" firstAttribute="trailing" secondItem="nzb-Kn-QLy" secondAttribute="trailing" constant="16" id="uzY-td-qV5"/>
                             <constraint firstItem="chi-t9-raB" firstAttribute="bottom" secondItem="nzb-Kn-QLy" secondAttribute="bottom" constant="152.5" id="xPB-86-Hc3"/>
+                            <constraint firstItem="KiL-Ap-P5V" firstAttribute="trailing" secondItem="chi-t9-raB" secondAttribute="trailing" id="y90-hk-0QN"/>
                             <constraint firstItem="nzb-Kn-QLy" firstAttribute="top" secondItem="ofZ-YD-Usq" secondAttribute="bottom" constant="44.5" id="zUV-fO-q5V"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="chi-t9-raB"/>
                     </view>
                     <connections>
+                        <outlet property="loadingScreen" destination="KiL-Ap-P5V" id="4sB-Gw-k9n"/>
                         <outlet property="txtPassword" destination="Hj4-FG-zkd" id="kPl-2h-YvC"/>
                         <outlet property="txtUsername" destination="vR5-RD-e35" id="C08-E9-Smp"/>
                     </connections>
