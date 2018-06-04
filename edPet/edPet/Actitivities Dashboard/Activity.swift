@@ -11,36 +11,56 @@ import UIKit
 /*import FirebaseStorage
 import FirebaseDatabase*/
 
-class Activity: NSObject/*: CustomStringConvertible */{
+class Activity: NSObject, NSCoding/*: CustomStringConvertible */{
     
+   
     
+    //MARK: Properties
     var title: String!
     var days_until_due: Int!
     var completion: Bool!
     var time_estimate: Int!
+    var previewImage: UIImage?
     
-    init?(title: String, days_until_due: Int, completion: Bool, time_estimate: Int) {
+    //MARK: Archiving Paths
+    static let DocumentsDirectory = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first!
+    static let ArchiveURL = DocumentsDirectory.appendingPathComponent("activities")
+    
+    struct PropertyKey {
+        static let title = "title"
+        static let days_until_due = "days_until_due"
+        static let completion = "completion"
+        static let time_estimate = "time_estimate"
+        static let previewImage = "previewImage"
+    }
+    
+    init?(title: String, days_until_due: Int, completion: Bool, time_estimate: Int, previewImage: UIImage?) {
         self.title = title
         self.days_until_due = days_until_due
         self.completion = completion
         self.time_estimate = time_estimate
+        self.previewImage = previewImage
     }
     
-    /*//firebase init
-    init(key: String, dictionary: Dictionary<String, AnyObject>) {
-        /self.id = id
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(title, forKey: PropertyKey.title)
+        aCoder.encode(days_until_due, forKey: PropertyKey.days_until_due)
+        aCoder.encode(completion, forKey: PropertyKey.completion)
+        aCoder.encode(time_estimate, forKey: PropertyKey.time_estimate)
+        aCoder.encode(previewImage, forKey: PropertyKey.previewImage)
+    }
+    
+    required convenience init?(coder aDecoder: NSCoder) {
         
-        if let title = dictionary["title"] as? String {
-            self.title = title
-        }
+        let title = aDecoder.decodeObject(forKey: PropertyKey.title)
+        let days_until_due = aDecoder.decodeInteger(forKey: PropertyKey.days_until_due)
+        let completion = aDecoder.decodeBool(forKey: PropertyKey.completion)
+        let time_estimate = aDecoder.decodeInteger(forKey: PropertyKey.time_estimate)
+        let previewImage = aDecoder.decodeObject(forKey: PropertyKey.previewImage)
         
-        if let due_date = dictionary["due_date"] as? Date {
-            self.due_date = due_date
-        }
+        // Must call designated initializer.
+        self.init(title: title as! String, days_until_due: days_until_due, completion: completion, time_estimate: time_estimate, previewImage: previewImage as? UIImage)
         
-        
-        self.reference = API.studentsReference.child(self.key)
-        self.profileImageReference = API.studentImagesReference.child(self.key)
-    }*/
-
+    }
+   
 }

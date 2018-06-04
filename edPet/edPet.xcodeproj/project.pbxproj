@@ -12,7 +12,6 @@
 		7565FF395E1577D9CAB0ACED /* Pods_edPet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26B4D148C4DBFA3F1D42741B /* Pods_edPet.framework */; };
 		AE17E87520995CE40064813D /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE17E87420995CE40064813D /* Activity.swift */; };
 		AE234D43208968B400CF3965 /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE234D42208968B400CF3965 /* ActivityTableViewCell.swift */; };
-		AE234D45208978BA00CF3965 /* ActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE234D44208978BA00CF3965 /* ActivityTableViewController.swift */; };
 		AE5B610B2080498000A4657A /* newViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5B610A2080498000A4657A /* newViewController.swift */; };
 		AE704D5E207DAD8E00116E8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE704D5D207DAD8E00116E8C /* GoogleService-Info.plist */; };
 		AE704D5F207DAD8E00116E8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE704D5D207DAD8E00116E8C /* GoogleService-Info.plist */; };
@@ -62,7 +61,6 @@
 		AAF32897223C19A5D50DD4E4 /* Pods-edPetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-edPetTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-edPetTests/Pods-edPetTests.release.xcconfig"; sourceTree = "<group>"; };
 		AE17E87420995CE40064813D /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		AE234D42208968B400CF3965 /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
-		AE234D44208978BA00CF3965 /* ActivityTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableViewController.swift; sourceTree = "<group>"; };
 		AE5B610A2080498000A4657A /* newViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newViewController.swift; sourceTree = "<group>"; };
 		AE704D5D207DAD8E00116E8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AEBC950B2086DD280025A52C /* Login Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Login Storyboard.storyboard"; sourceTree = "<group>"; };
@@ -143,7 +141,6 @@
 			isa = PBXGroup;
 			children = (
 				AEBC95102086DD6D0025A52C /* Activities Dashboard.storyboard */,
-				AE234D44208978BA00CF3965 /* ActivityTableViewController.swift */,
 				AE234D42208968B400CF3965 /* ActivityTableViewCell.swift */,
 				AEBC95182086DE630025A52C /* activitiesViewController.swift */,
 				AE17E87420995CE40064813D /* Activity.swift */,
@@ -471,7 +468,6 @@
 				AEBC95172086DE170025A52C /* homescreenViewController.swift in Sources */,
 				AEBC95192086DE630025A52C /* activitiesViewController.swift in Sources */,
 				D5E0F41D207C288400501C09 /* AppDelegate.swift in Sources */,
-				AE234D45208978BA00CF3965 /* ActivityTableViewController.swift in Sources */,
 				AE5B610B2080498000A4657A /* newViewController.swift in Sources */,
 				AE234D43208968B400CF3965 /* ActivityTableViewCell.swift in Sources */,
 			);

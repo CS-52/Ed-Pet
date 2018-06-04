@@ -12,25 +12,25 @@ class ActivityTableViewCell: UITableViewCell {
 
     //MARK: Properties
     @IBOutlet weak var activityTitle: UILabel!
-    @IBOutlet weak var previewImage: UIImageView?
     @IBOutlet weak var completionImage: UIImageView?
     
     @IBOutlet weak var days_until_due: UILabel!
     @IBOutlet weak var time: UILabel!
-   // @IBOutlet weak var progress: KDCircularProgress!
+    @IBOutlet weak var previewImage: UIImageView?
     
+   // @IBOutlet weak var progress: KDCircularProgress!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        
-        
+        previewImage?.layer.cornerRadius = ((previewImage?.frame.width)! / 2)
+        previewImage?.layer.masksToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
+    
+
 
 }
