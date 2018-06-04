@@ -58,12 +58,8 @@ class shopViewController: UIViewController {
             Singleton.addAccessory(userID, shop_images[curr_indx])
             numberOfCoins = numberOfCoins! - shop_prices[curr_indx]
         }
-        
-        
-        
-        
-        
     }
+    
     func showToast(message : String) {
         
         let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - 150, y: self.view.frame.size.height-100, width: 300, height: 35))

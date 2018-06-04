@@ -9,8 +9,7 @@ target 'edPet' do
 	pod 'Firebase/Core'
     pod 'Firebase/Auth'
     pod 'Firebase/Database'
-    pod 'KDCircularProgress'
-    pod 'SwiftGifOrigin', '~> 1.6.1'
+	pod 'KDCircularProgress'
 
   target 'edPetTests' do
     inherit! :search_paths
@@ -21,6 +20,5 @@ target 'edPet' do
     inherit! :search_paths
     # Pods for testing
   end
-  
 
 end

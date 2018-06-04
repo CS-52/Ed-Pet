@@ -16,6 +16,7 @@ class Singleton {
     static let sharedInstance = Singleton()
     var coins: Int?
     var accessories: [String]
+    var outfit: [String]
     
     static let databaseReference: DatabaseReference = Database.database().reference()
     
@@ -23,8 +24,14 @@ class Singleton {
     private init() {
         coins = 0
         accessories = []
+        outfit = ["N/A", "N/A", "N/A"]
     }
     
+    class func addToOutfit(item_name:String, catergory:String) {
+        if (catergory == "hat") {sharedInstance.outfit[0] = item_name}
+        if (catergory == "eyewear") {sharedInstance.outfit[1] = item_name}
+        if (catergory == "neckwear") {sharedInstance.outfit[2] = item_name}
+    }
     
     class func getCoins(_ key: String, completed: ((Int?) -> Void)?) {
         databaseReference.child(key).child("coins").observeSingleEvent(of: .value, with: { snapshot in

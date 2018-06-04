@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dressing View Controller-->
+        <scene sceneID="eEJ-wD-uaP">
+            <objects>
+                <viewController title="Dressing View Controller" id="bcg-SB-BGn" customClass="dressingViewController" customModule="edPet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u3X-Yb-1FD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TableBackground" translatesAutoresizingMaskIntoConstraints="NO" id="r0C-mo-z6C">
+                                <rect key="frame" x="202" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="screen_label" translatesAutoresizingMaskIntoConstraints="NO" id="wHF-9c-3bg">
+                                <rect key="frame" x="0.0" y="1" width="375" height="77"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Dressing Room" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0w-Y0-n7C">
+                                <rect key="frame" x="64" y="21" width="246" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dressing_stand" translatesAutoresizingMaskIntoConstraints="NO" id="77J-84-MeK">
+                                <rect key="frame" x="48" y="439" width="279" height="162"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="pet_default" translatesAutoresizingMaskIntoConstraints="NO" id="OP9-6a-0TQ">
+                                <rect key="frame" x="72" y="86" width="255" height="380"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="shop_rect" translatesAutoresizingMaskIntoConstraints="NO" id="vWc-f1-vFy">
+                                <rect key="frame" x="48" y="487" width="279" height="142"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mlG-wF-HYp">
+                                <rect key="frame" x="79" y="502" width="217" height="112"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6KG-fZ-iBX">
+                                <rect key="frame" x="122" y="600" width="131" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="shop_rect_orange"/>
+                                <connections>
+                                    <action selector="selectPiece:" destination="bcg-SB-BGn" eventType="touchUpInside" id="ZSL-ND-V6R"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6H-tl-Ekk">
+                                <rect key="frame" x="167" y="609" width="40" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E7V-gd-Dly">
+                                <rect key="frame" x="304" y="524" width="51" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="arrow_blue_right"/>
+                                <connections>
+                                    <action selector="toggleRight:" destination="bcg-SB-BGn" eventType="touchUpInside" id="6cm-pU-Ku3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eyo-Dd-0QP">
+                                <rect key="frame" x="25" y="524" width="55" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="arrow_blue_left"/>
+                                <connections>
+                                    <action selector="toggleLeft:" destination="bcg-SB-BGn" eventType="touchUpInside" id="3HI-2H-NtP"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lDI-kK-yig">
+                                <rect key="frame" x="122" y="111" width="137" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BUy-mw-98x">
+                                <rect key="frame" x="140" y="302" width="76" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KTK-8L-acW">
+                                <rect key="frame" x="107" y="220" width="142" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4q-9E-ODp">
+                                <rect key="frame" x="315" y="86" width="56" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="square_lightBlue"/>
+                                <connections>
+                                    <action selector="takePhoto:" destination="bcg-SB-BGn" eventType="touchUpInside" id="tCh-jm-S51"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="6nv-Da-T47"/>
+                    </view>
+                    <connections>
+                        <outlet property="dressing_image" destination="mlG-wF-HYp" id="IcP-en-RZ3"/>
+                        <outlet property="eyewearImage" destination="KTK-8L-acW" id="PpU-3I-DTO"/>
+                        <outlet property="eyewear_image" destination="KTK-8L-acW" id="IG6-kn-TCz"/>
+                        <outlet property="hatImage" destination="lDI-kK-yig" id="Zq6-5i-edW"/>
+                        <outlet property="headwearImage" destination="lDI-kK-yig" id="TO6-ab-WeB"/>
+                        <outlet property="headwear_image" destination="lDI-kK-yig" id="1aX-fq-Aqf"/>
+                        <outlet property="neckwearImage" destination="BUy-mw-98x" id="yes-Kl-8lD"/>
+                        <outlet property="neckwear_image" destination="BUy-mw-98x" id="Jt8-dj-lz7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9q1-WP-hwP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-866.39999999999998" y="14.842578710644679"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TableBackground" width="1952" height="1276"/>
+        <image name="arrow_blue_left" width="55" height="68"/>
+        <image name="arrow_blue_right" width="51" height="68"/>
+        <image name="dressing_stand" width="1200" height="511"/>
+        <image name="pet_default" width="222" height="383"/>
+        <image name="screen_label" width="375" height="92"/>
+        <image name="shop_rect" width="279" height="142"/>
+        <image name="shop_rect_orange" width="131" height="47"/>
+        <image name="square_lightBlue" width="112" height="51"/>
+    </resources>
+</document>
+
