@@ -11,8 +11,11 @@ import FirebaseAuth
 class homescreenViewController: UIViewController {
     
     @IBOutlet weak var coinLabel: UILabel!
+    @IBOutlet weak var pet: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        pet.loadGif(name: "petmovie")
         
         // Do any additional setup after loading the view, typically from a nib.
     }

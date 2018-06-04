@@ -7,7 +7,11 @@
 //
 
 import UIKit
-//import FirebaseAuth
+import MediaPlayer
+import FirebaseAuth
+import AVKit
+import AVFoundation
+
 class activitypageViewController: UIViewController {
     
     override func viewDidLoad() {
@@ -21,6 +25,8 @@ class activitypageViewController: UIViewController {
         //Singleton.sharedInstance.accessories
         
     }
+    
+   
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

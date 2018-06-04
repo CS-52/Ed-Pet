@@ -26,6 +26,8 @@ class ActivityTableViewCell: UITableViewCell {
         // Initialization code
         previewImage?.layer.cornerRadius = ((previewImage?.frame.width)! / 2)
         previewImage?.layer.masksToBounds = true
+        
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

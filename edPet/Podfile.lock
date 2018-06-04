@@ -43,15 +43,17 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - SwiftGifOrigin (1.6.1)
 
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
   - KDCircularProgress
+  - SwiftGifOrigin (~> 1.6.1)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -63,6 +65,7 @@ SPEC REPOS:
     - KDCircularProgress
     - leveldb-library
     - nanopb
+    - SwiftGifOrigin
 
 SPEC CHECKSUMS:
   Firebase: d7fdf40e4d6c841849c52919f437fd3a0009ded0
@@ -76,7 +79,8 @@ SPEC CHECKSUMS:
   KDCircularProgress: 12f677b2deb02409ab48c6cae1898d146b8ad549
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  SwiftGifOrigin: d6679d3ebe9df2e049a84bc52582635107b581f6
 
-PODFILE CHECKSUM: 8895a15671a1fb82722f9ce96c56c8c995de724d
+PODFILE CHECKSUM: e3ed4c11210ee245ff1b501df660f8ddcedb9637
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.5.0

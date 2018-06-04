@@ -25,6 +25,9 @@
 		AEBC951B2086DF670025A52C /* shop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEBC951A2086DF670025A52C /* shop.storyboard */; };
 		AEBC951E2086DF970025A52C /* shopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBC951D2086DF970025A52C /* shopViewController.swift */; };
 		AEE4B21420C5DA7B008E871F /* activitypageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE4B21320C5DA7B008E871F /* activitypageViewController.swift */; };
+		AEE4B21620C5FC62008E871F /* swift+gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE4B21520C5FC62008E871F /* swift+gif.swift */; };
+		AEE4B21820C5FDAB008E871F /* homescreenVideo.GIF in Resources */ = {isa = PBXBuildFile; fileRef = AEE4B21720C5FDAB008E871F /* homescreenVideo.GIF */; };
+		AEE4B21A20C5FF49008E871F /* petmovie.gif in Resources */ = {isa = PBXBuildFile; fileRef = AEE4B21920C5FF48008E871F /* petmovie.gif */; };
 		D5E0F41D207C288400501C09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E0F41C207C288400501C09 /* AppDelegate.swift */; };
 		D5E0F41F207C288400501C09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E0F41E207C288400501C09 /* ViewController.swift */; };
 		D5E0F422207C288400501C09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5E0F420207C288400501C09 /* Main.storyboard */; };
@@ -74,6 +77,9 @@
 		AEBC951A2086DF670025A52C /* shop.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = shop.storyboard; sourceTree = "<group>"; };
 		AEBC951D2086DF970025A52C /* shopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopViewController.swift; sourceTree = "<group>"; };
 		AEE4B21320C5DA7B008E871F /* activitypageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = activitypageViewController.swift; sourceTree = "<group>"; };
+		AEE4B21520C5FC62008E871F /* swift+gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "swift+gif.swift"; sourceTree = "<group>"; };
+		AEE4B21720C5FDAB008E871F /* homescreenVideo.GIF */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = homescreenVideo.GIF; sourceTree = "<group>"; };
+		AEE4B21920C5FF48008E871F /* petmovie.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = petmovie.gif; sourceTree = "<group>"; };
 		D5E0F419207C288400501C09 /* edPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = edPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5E0F41C207C288400501C09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5E0F41E207C288400501C09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -157,7 +163,10 @@
 			isa = PBXGroup;
 			children = (
 				AEBC950E2086DD560025A52C /* Home Screen.storyboard */,
+				AEE4B21520C5FC62008E871F /* swift+gif.swift */,
 				AEBC95162086DE170025A52C /* homescreenViewController.swift */,
+				AEE4B21920C5FF48008E871F /* petmovie.gif */,
+				AEE4B21720C5FDAB008E871F /* homescreenVideo.GIF */,
 			);
 			path = "Home Screen";
 			sourceTree = "<group>";
@@ -356,8 +365,10 @@
 				AEBC950C2086DD280025A52C /* Login Storyboard.storyboard in Resources */,
 				AEBC95112086DD6D0025A52C /* Activities Dashboard.storyboard in Resources */,
 				AEBC950F2086DD560025A52C /* Home Screen.storyboard in Resources */,
+				AEE4B21820C5FDAB008E871F /* homescreenVideo.GIF in Resources */,
 				D5E0F427207C288400501C09 /* LaunchScreen.storyboard in Resources */,
 				AE704D5E207DAD8E00116E8C /* GoogleService-Info.plist in Resources */,
+				AEE4B21A20C5FF49008E871F /* petmovie.gif in Resources */,
 				D5E0F424207C288400501C09 /* Assets.xcassets in Resources */,
 				D5E0F422207C288400501C09 /* Main.storyboard in Resources */,
 			);
@@ -410,6 +421,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/KDCircularProgress/KDCircularProgress.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftGifOrigin/SwiftGifOrigin.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -418,6 +430,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KDCircularProgress.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftGifOrigin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -473,6 +486,7 @@
 				AEBC951E2086DF970025A52C /* shopViewController.swift in Sources */,
 				AEBC95152086DDBC0025A52C /* loginViewController.swift in Sources */,
 				D5E0F41F207C288400501C09 /* ViewController.swift in Sources */,
+				AEE4B21620C5FC62008E871F /* swift+gif.swift in Sources */,
 				AEBC95172086DE170025A52C /* homescreenViewController.swift in Sources */,
 				AEBC95192086DE630025A52C /* activitiesViewController.swift in Sources */,
 				D5F8D29720BA291D005F02A5 /* Singleton.swift in Sources */,
