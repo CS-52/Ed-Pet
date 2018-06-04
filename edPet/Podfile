@@ -8,6 +8,7 @@ target 'edPet' do
   # Pods for edPet
 	pod 'Firebase/Core'
     pod 'Firebase/Auth'
+    pod 'Firebase/Database'
 	pod 'KDCircularProgress'
 
   target 'edPetTests' do

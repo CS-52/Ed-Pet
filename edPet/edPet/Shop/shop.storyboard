@@ -6,14 +6,15 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Shop View Controller-->
         <scene sceneID="pUB-I2-GDs">
             <objects>
-                <viewController storyboardIdentifier="shopViewer" id="trz-Ju-qFm" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="shopViewer" id="trz-Ju-qFm" customClass="shopViewController" customModule="edPet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="upw-l8-a89">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,23 +42,26 @@
                                 <rect key="frame" x="48" y="490" width="279" height="142"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="shop_rect_orange" translatesAutoresizingMaskIntoConstraints="NO" id="i45-cC-xM3">
-                                <rect key="frame" x="121" y="600" width="131" height="47"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="128.00000000000006" image="shop_image1" translatesAutoresizingMaskIntoConstraints="NO" id="Kd5-zm-iKR" customClass="UImageView">
+                                <rect key="frame" x="74" y="509" width="240" height="92"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Mun-fk-TIe"/>
+                                    <constraint firstAttribute="height" constant="92" id="dcw-Kh-nSy"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="92" id="ePA-iE-aGx"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="151" id="hby-2H-gjg"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="151" id="qWR-46-KkI"/>
+                                </constraints>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="coin_icon" translatesAutoresizingMaskIntoConstraints="NO" id="yXF-iv-fhq">
-                                <rect key="frame" x="138" y="600" width="47" height="40"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="150" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohw-wE-jEu">
-                                <rect key="frame" x="193" y="605" width="40" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ix-Zz-IJo">
+                                <rect key="frame" x="121" y="600" width="135" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2,350" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAH-jm-9Q6">
-                                <rect key="frame" x="279" y="115" width="80" height="41"/>
+                                <state key="normal" title="Button" image="shop_rect_orange"/>
+                                <connections>
+                                    <action selector="buyItem:" destination="trz-Ju-qFm" eventType="touchUpInside" id="ZZD-IP-e1C"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="2,350" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAH-jm-9Q6">
+                                <rect key="frame" x="360" y="115" width="88" height="41"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -66,11 +70,19 @@
                                 <rect key="frame" x="322" y="521" width="51" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="arrow_blue_right"/>
+                                <connections>
+                                    <action selector="toggleRight:" destination="trz-Ju-qFm" eventType="touchUpInside" id="72Z-tm-ehd"/>
+                                    <action selector="toggleRight:" destination="cZb-Y3-X60" eventType="touchUpInside" id="FE6-sT-q5D"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KPl-B7-uSY">
                                 <rect key="frame" x="-1" y="521" width="55" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="arrow_blue_left"/>
+                                <connections>
+                                    <action selector="toggleLeft:" destination="cZb-Y3-X60" eventType="touchUpInside" id="Q8a-m6-nfC"/>
+                                    <action selector="toggleLeft:" destination="trz-Ju-qFm" eventType="touchUpInside" id="kso-WK-YHr"/>
+                                </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" image="coin_icon" translatesAutoresizingMaskIntoConstraints="NO" id="0IO-QO-9Ee">
                                 <rect key="frame" x="216" y="115" width="47" height="40"/>
@@ -89,29 +101,59 @@
                                     <segue destination="cZb-Y3-X60" kind="unwind" unwindAction="myUnwindFor:towardsViewController:" id="poK-bM-XM5"/>
                                 </connections>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" image="coin_icon" translatesAutoresizingMaskIntoConstraints="NO" id="yXF-iv-fhq">
+                                <rect key="frame" x="94" y="600" width="136" height="40"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohw-wE-jEu">
+                                <rect key="frame" x="149" y="605" width="129" height="31"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="Kd5-zm-iKR" firstAttribute="leading" secondItem="upw-l8-a89" secondAttribute="leadingMargin" constant="96" id="0nX-6w-gXg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ohw-wE-jEu" secondAttribute="trailing" constant="126" id="1MJ-Mg-etv"/>
                             <constraint firstItem="f8B-zU-pDg" firstAttribute="leading" secondItem="upw-l8-a89" secondAttribute="leading" constant="-84" id="5b6-A2-IpT"/>
+                            <constraint firstItem="yXF-iv-fhq" firstAttribute="top" secondItem="upw-l8-a89" secondAttribute="top" constant="600" id="BLY-hY-e20"/>
                             <constraint firstItem="0IO-QO-9Ee" firstAttribute="top" secondItem="8Wi-mU-GjH" secondAttribute="bottom" constant="30" id="BQB-YI-oU5"/>
                             <constraint firstItem="FNo-AJ-I50" firstAttribute="top" secondItem="8Wi-mU-GjH" secondAttribute="bottom" constant="55" id="F1K-1H-8yE"/>
                             <constraint firstItem="8Wi-mU-GjH" firstAttribute="leading" secondItem="upw-l8-a89" secondAttribute="leading" constant="-1" id="FQJ-bh-YG7"/>
+                            <constraint firstItem="Kd5-zm-iKR" firstAttribute="top" secondItem="upw-l8-a89" secondAttribute="topMargin" constant="485" id="GTY-cU-MVE"/>
                             <constraint firstItem="FGx-bl-3Aj" firstAttribute="top" secondItem="8Wi-mU-GjH" secondAttribute="bottom" constant="15" id="IrS-TG-6Q8"/>
                             <constraint firstItem="WsZ-cD-mhE" firstAttribute="trailing" secondItem="jgz-QG-At4" secondAttribute="trailing" id="Joo-js-cmo"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="ohw-wE-jEu" secondAttribute="bottom" constant="31" id="Kcz-6I-QVY"/>
+                            <constraint firstAttribute="trailing" secondItem="yXF-iv-fhq" secondAttribute="trailing" constant="190" id="KkM-8S-4I3"/>
                             <constraint firstAttribute="trailing" secondItem="f8B-zU-pDg" secondAttribute="trailing" constant="-269" id="LlY-WV-rws"/>
+                            <constraint firstItem="yXF-iv-fhq" firstAttribute="leading" secondItem="upw-l8-a89" secondAttribute="leadingMargin" constant="122" id="M0q-sa-Ru2"/>
                             <constraint firstItem="mAH-jm-9Q6" firstAttribute="leading" secondItem="0IO-QO-9Ee" secondAttribute="trailing" constant="16" id="MJZ-gX-q88"/>
+                            <constraint firstItem="Kd5-zm-iKR" firstAttribute="top" secondItem="upw-l8-a89" secondAttribute="topMargin" constant="485" id="PRi-2m-Wuf"/>
+                            <constraint firstAttribute="bottom" secondItem="yXF-iv-fhq" secondAttribute="bottom" constant="27" id="U89-Eo-tBz"/>
                             <constraint firstItem="uRt-Pf-l4q" firstAttribute="top" secondItem="jgz-QG-At4" secondAttribute="top" constant="11" id="aMH-Kj-EVj"/>
                             <constraint firstItem="f8B-zU-pDg" firstAttribute="top" secondItem="jgz-QG-At4" secondAttribute="top" constant="11" id="ceG-Sv-xOU"/>
+                            <constraint firstItem="yXF-iv-fhq" firstAttribute="top" secondItem="upw-l8-a89" secondAttribute="topMargin" constant="580" id="d9a-wo-KBP"/>
+                            <constraint firstItem="yXF-iv-fhq" firstAttribute="leading" secondItem="upw-l8-a89" secondAttribute="leading" constant="138" id="dhO-ZA-JAe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Kd5-zm-iKR" secondAttribute="trailing" constant="96" id="hdq-4B-e6S"/>
+                            <constraint firstItem="ohw-wE-jEu" firstAttribute="leading" secondItem="upw-l8-a89" secondAttribute="leadingMargin" constant="177" id="kZc-N3-nC1"/>
                             <constraint firstItem="jgz-QG-At4" firstAttribute="trailing" secondItem="mAH-jm-9Q6" secondAttribute="trailing" constant="16" id="l1e-UJ-vIs"/>
                             <constraint firstItem="mAH-jm-9Q6" firstAttribute="top" secondItem="8Wi-mU-GjH" secondAttribute="bottom" constant="30" id="m1Z-x9-Kvz"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="yXF-iv-fhq" secondAttribute="bottom" constant="27" id="sNT-Ic-kgc"/>
                             <constraint firstAttribute="trailing" secondItem="FGx-bl-3Aj" secondAttribute="trailing" constant="-1" id="tXn-aC-dK9"/>
+                            <constraint firstItem="ohw-wE-jEu" firstAttribute="top" secondItem="upw-l8-a89" secondAttribute="topMargin" constant="585" id="uOw-C1-fqi"/>
                             <constraint firstItem="jgz-QG-At4" firstAttribute="bottom" secondItem="f8B-zU-pDg" secondAttribute="bottom" constant="11" id="vGc-CH-X16"/>
                             <constraint firstItem="FNo-AJ-I50" firstAttribute="trailing" secondItem="jgz-QG-At4" secondAttribute="trailing" id="vZE-dK-LZ1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yXF-iv-fhq" secondAttribute="trailing" constant="174" id="w98-pj-IGj"/>
                             <constraint firstItem="jgz-QG-At4" firstAttribute="bottom" secondItem="WsZ-cD-mhE" secondAttribute="bottom" constant="48" id="yLn-WS-5dR"/>
                             <constraint firstAttribute="trailing" secondItem="8Wi-mU-GjH" secondAttribute="trailing" constant="-1" id="yRG-6p-SSQ"/>
                             <constraint firstItem="uRt-Pf-l4q" firstAttribute="leading" secondItem="jgz-QG-At4" secondAttribute="leading" constant="16" id="zxB-5y-Q9y"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jgz-QG-At4"/>
                     </view>
+                    <connections>
+                        <outlet property="coinLabel" destination="mAH-jm-9Q6" id="mWu-cV-Kqr"/>
+                        <outlet property="shop_image" destination="Kd5-zm-iKR" id="HRZ-pT-Uw5"/>
+                        <outlet property="shop_price" destination="ohw-wE-jEu" id="tLg-ar-GOu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="chi-oc-EYT" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="cZb-Y3-X60" userLabel="Exit" sceneMemberID="exit"/>
@@ -127,6 +169,7 @@
         <image name="coin_icon" width="47" height="40"/>
         <image name="perspective-wooden-table-on-top-over-blur-coffee-shop-background_7636-68" width="626" height="417"/>
         <image name="screen_label" width="375" height="92"/>
+        <image name="shop_image1" width="109" height="148"/>
         <image name="shop_keeper" width="230" height="365"/>
         <image name="shop_rect" width="279" height="142"/>
         <image name="shop_rect_orange" width="131" height="47"/>

@@ -13,6 +13,7 @@ class loginViewController: UIViewController {
     
     @IBOutlet weak var txtUsername: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
+    @IBOutlet weak var loadingScreen: UIView!
     
     var loginSuccessful = false
     
@@ -28,15 +29,26 @@ class loginViewController: UIViewController {
         txtPassword.layer.borderColor = UIColor.white.cgColor
         txtPassword.layer.cornerRadius = 20;
         txtPassword.clipsToBounds = true;
+        
+        loadingScreen.isHidden = true
         // Do any additional setup after loading the view, typically from a nib.
     }
     
     @IBAction func LoginPressed(_ sender: UIButton) {
+        self.loadingScreen.isHidden = false
         Auth.auth().signIn(withEmail: txtUsername.text!, password: txtPassword.text!) { (user, error) in
             if (error == nil) {
-                self.performSegue(withIdentifier: "homeScreenSegue", sender: nil)
-                
+               
+                let userID = Auth.auth().currentUser!.uid
+                Singleton.getCoins(userID, completed: {
+                    coins in
+                    Singleton.getAccessories(userID, completed: {
+                        userAccessories in
+                    })
+                    self.performSegue(withIdentifier: "homeScreenSegue", sender: nil)
+                })
             } else {
+                self.loadingScreen.isHidden = true
                 self.showToast(message: "Make sure you use the right login info.")
             }
         }
