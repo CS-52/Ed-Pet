@@ -19,11 +19,11 @@ class activitiesViewController: UIViewController, UITableViewDataSource, UITable
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let savedActivities = loadActivities() {
+        /*if let savedActivities = loadActivities() {
             activities += savedActivities
         } else {
             loadSampleActivities()
-        }
+        }*/
         
         loadSampleActivities()
     }
@@ -66,7 +66,7 @@ class activitiesViewController: UIViewController, UITableViewDataSource, UITable
             cell.completionImage?.image = UIImage(named: "check")
         }
         cell.time.text = String(activity.time_estimate) + " min"
-        //cell.previewImage?.image = activity.previewImage
+        cell.previewImage?.image = activity.previewImage
         
         return cell
     }
@@ -95,7 +95,7 @@ class activitiesViewController: UIViewController, UITableViewDataSource, UITable
         }
         
         
-        activities += [activity1, activity2, activity3]
+        activities += [activity1, activity2, activity3, activity4]
 
     }
     

@@ -16,7 +16,8 @@ class ActivityTableViewCell: UITableViewCell {
     
     @IBOutlet weak var days_until_due: UILabel!
     @IBOutlet weak var time: UILabel!
-    @IBOutlet weak var previewImage: UIImageView?
+    @IBOutlet weak var previewImage: UIImageView!
+    
     
    // @IBOutlet weak var progress: KDCircularProgress!
     

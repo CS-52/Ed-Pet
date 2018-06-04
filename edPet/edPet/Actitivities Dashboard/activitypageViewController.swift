@@ -7,10 +7,9 @@
 //
 
 import UIKit
-import FirebaseAuth
-class homescreenViewController: UIViewController {
+//import FirebaseAuth
+class activitypageViewController: UIViewController {
     
-    @IBOutlet weak var coinLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
