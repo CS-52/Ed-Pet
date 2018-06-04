@@ -9,8 +9,9 @@
 import UIKit
 import FirebaseAuth
 class homescreenViewController: UIViewController {
-    
+    var userAccessories: [String] = []
     @IBOutlet weak var coinLabel: UILabel!
+    @IBOutlet weak var hatImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -18,9 +19,11 @@ class homescreenViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        //coinLabel.text = String(Singleton.sharedInstance.coins!)
-        //Singleton.sharedInstance.accessories
-        
+        coinLabel.text = String(Singleton.sharedInstance.coins!)
+        userAccessories = Singleton.sharedInstance.accessories
+        if(userAccessories.count > 0) {
+            hatImage.image = UIImage(named: userAccessories[0])
+        }
     }
     
     override func didReceiveMemoryWarning() {
