@@ -27,14 +27,19 @@
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <state key="normal" backgroundImage="button_blue_rotated"/>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" image="coin_icon" translatesAutoresizingMaskIntoConstraints="NO" id="lYR-vz-xdW">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="coin_icon" translatesAutoresizingMaskIntoConstraints="NO" id="lYR-vz-xdW">
                                 <rect key="frame" x="16" y="33" width="47" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="Hr2-Qe-qoP"/>
+                                    <constraint firstAttribute="height" constant="40" id="Gvi-6A-0ZL"/>
+                                    <constraint firstAttribute="width" constant="47" id="fhR-ZA-i9K"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2,305" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Asl-D6-vA3">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2,305" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Asl-D6-vA3">
                                 <rect key="frame" x="71" y="33" width="88" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="7Yp-t1-6ca"/>
+                                    <constraint firstAttribute="height" constant="40" id="l04-lZ-veG"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="33"/>
                                 <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -61,14 +66,13 @@
                                     <segue destination="L9h-0m-poi" kind="show" id="Oas-Pz-DRc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHi-s5-D2M">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHi-s5-D2M">
                                 <rect key="frame" x="266" y="-4" width="109" height="104"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="104" id="KTP-Me-83u"/>
                                     <constraint firstAttribute="width" constant="109" id="p2f-SS-zlv"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <state key="normal" backgroundImage="button_blue_rotated"/>
+                                <state key="normal" image="hanger-1" backgroundImage="button_blue_rotated"/>
                                 <connections>
                                     <segue destination="avC-Ev-3iN" kind="show" id="V34-6p-IaV"/>
                                 </connections>
@@ -86,10 +90,12 @@
                         </subviews>
                         <constraints>
                             <constraint firstItem="oRq-J8-6kB" firstAttribute="leading" secondItem="Nzw-Rq-4vf" secondAttribute="leading" id="6Ku-wh-U4i"/>
+                            <constraint firstItem="lYR-vz-xdW" firstAttribute="leading" secondItem="S3Y-9N-KKh" secondAttribute="leading" constant="16" id="9GO-gh-94z"/>
                             <constraint firstItem="Nzw-Rq-4vf" firstAttribute="bottom" secondItem="hHi-s5-D2M" secondAttribute="bottom" id="FrD-gv-401"/>
                             <constraint firstItem="oRq-J8-6kB" firstAttribute="leading" secondItem="qtg-fh-0eX" secondAttribute="leading" id="H2F-97-6Ao"/>
-                            <constraint firstItem="Asl-D6-vA3" firstAttribute="leading" secondItem="lYR-vz-xdW" secondAttribute="trailing" constant="8" symbolic="YES" id="J4v-mu-tQE"/>
+                            <constraint firstItem="Asl-D6-vA3" firstAttribute="leading" secondItem="lYR-vz-xdW" secondAttribute="trailing" constant="8" symbolic="YES" id="H3T-r9-Dxa"/>
                             <constraint firstItem="Q3I-Bz-dM9" firstAttribute="leading" secondItem="oRq-J8-6kB" secondAttribute="leading" id="K8u-Jg-8en"/>
+                            <constraint firstItem="lYR-vz-xdW" firstAttribute="top" secondItem="qtg-fh-0eX" secondAttribute="bottom" constant="12" id="Lye-ru-bmo"/>
                             <constraint firstItem="asE-ey-X1Z" firstAttribute="trailing" secondItem="S3Y-9N-KKh" secondAttribute="trailing" id="Ne1-8y-bBo"/>
                             <constraint firstItem="hHi-s5-D2M" firstAttribute="trailing" secondItem="S3Y-9N-KKh" secondAttribute="trailing" id="OTn-JA-iZ2"/>
                             <constraint firstItem="qtg-fh-0eX" firstAttribute="top" secondItem="bP5-WG-YBr" secondAttribute="top" id="Q0T-V8-7v0"/>
@@ -103,10 +109,9 @@
                             <constraint firstItem="Q3I-Bz-dM9" firstAttribute="centerX" secondItem="bP5-WG-YBr" secondAttribute="centerX" id="iCZ-Va-Dw8"/>
                             <constraint firstAttribute="bottom" secondItem="asE-ey-X1Z" secondAttribute="bottom" constant="-7" id="jkL-hj-J7C"/>
                             <constraint firstItem="Q3I-Bz-dM9" firstAttribute="centerY" secondItem="bP5-WG-YBr" secondAttribute="centerY" id="jrK-I6-t3a"/>
-                            <constraint firstItem="lYR-vz-xdW" firstAttribute="leading" secondItem="bP5-WG-YBr" secondAttribute="leadingMargin" id="kVF-3z-0B7"/>
                             <constraint firstItem="hHi-s5-D2M" firstAttribute="trailing" secondItem="S3Y-9N-KKh" secondAttribute="trailing" id="r9m-1h-uXh"/>
+                            <constraint firstItem="Asl-D6-vA3" firstAttribute="top" secondItem="qtg-fh-0eX" secondAttribute="bottom" constant="12" id="sNB-td-vM0"/>
                             <constraint firstItem="Nzw-Rq-4vf" firstAttribute="top" secondItem="bP5-WG-YBr" secondAttribute="topMargin" constant="-15" id="wKG-hC-1Xn"/>
-                            <constraint firstItem="lYR-vz-xdW" firstAttribute="top" secondItem="Asl-D6-vA3" secondAttribute="top" id="y41-Ma-RNF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="S3Y-9N-KKh"/>
                     </view>
@@ -148,6 +153,7 @@
         <image name="button_blue" width="84" height="61"/>
         <image name="button_blue_rotated" width="84" height="61"/>
         <image name="coin_icon" width="47" height="40"/>
+        <image name="hanger-1" width="170" height="151"/>
         <image name="menu_icon" width="65" height="50"/>
         <image name="store_icon" width="62" height="62"/>
     </resources>
