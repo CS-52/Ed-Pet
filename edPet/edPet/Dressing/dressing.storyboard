@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +14,7 @@
         <!--Dressing View Controller-->
         <scene sceneID="eEJ-wD-uaP">
             <objects>
-                <viewController title="Dressing View Controller" id="bcg-SB-BGn" customClass="dressingViewController" customModule="edPet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="dressingViewer" title="Dressing View Controller" id="bcg-SB-BGn" customClass="dressingViewController" customModule="edPet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u3X-Yb-1FD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,16 +38,19 @@
                                 <rect key="frame" x="48" y="439" width="279" height="162"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="pet_default" translatesAutoresizingMaskIntoConstraints="NO" id="OP9-6a-0TQ">
-                                <rect key="frame" x="72" y="86" width="255" height="380"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" image="pet_default" translatesAutoresizingMaskIntoConstraints="NO" id="OP9-6a-0TQ">
+                                <rect key="frame" x="84" y="95" width="226" height="370"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="370" id="ILL-rE-2va"/>
+                                    <constraint firstAttribute="width" constant="226" id="hPI-9z-pDt"/>
+                                </constraints>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="shop_rect" translatesAutoresizingMaskIntoConstraints="NO" id="vWc-f1-vFy">
                                 <rect key="frame" x="48" y="487" width="279" height="142"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mlG-wF-HYp">
-                                <rect key="frame" x="79" y="502" width="217" height="112"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mlG-wF-HYp">
+                                <rect key="frame" x="79" y="497" width="217" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6KG-fZ-iBX">
@@ -80,38 +84,40 @@
                                     <action selector="toggleLeft:" destination="bcg-SB-BGn" eventType="touchUpInside" id="3HI-2H-NtP"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lDI-kK-yig">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lDI-kK-yig">
                                 <rect key="frame" x="122" y="111" width="137" height="78"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BUy-mw-98x">
-                                <rect key="frame" x="140" y="302" width="76" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KTK-8L-acW">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KTK-8L-acW">
                                 <rect key="frame" x="107" y="220" width="142" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4q-9E-ODp">
-                                <rect key="frame" x="315" y="86" width="56" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="square_lightBlue"/>
-                                <connections>
-                                    <action selector="takePhoto:" destination="bcg-SB-BGn" eventType="touchUpInside" id="tCh-jm-S51"/>
-                                </connections>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mlz-2M-AuT">
+                                <rect key="frame" x="26" y="19" width="27" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="27" id="4mp-EC-W6T"/>
+                                    <constraint firstAttribute="height" constant="41" id="Nl2-Cq-9uo"/>
+                                </constraints>
+                                <state key="normal" image="arrow_left"/>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BUy-mw-98x">
+                                <rect key="frame" x="136" y="288" width="84" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OP9-6a-0TQ" firstAttribute="top" secondItem="u3X-Yb-1FD" secondAttribute="topMargin" constant="59" id="Hr3-vp-gVX"/>
+                            <constraint firstItem="OP9-6a-0TQ" firstAttribute="leading" secondItem="u3X-Yb-1FD" secondAttribute="leadingMargin" constant="68" id="iUy-5R-pBt"/>
+                            <constraint firstItem="Mlz-2M-AuT" firstAttribute="leading" secondItem="6nv-Da-T47" secondAttribute="leading" constant="26" id="jZj-kD-Yex"/>
+                            <constraint firstItem="Mlz-2M-AuT" firstAttribute="top" secondItem="u3X-Yb-1FD" secondAttribute="top" constant="19" id="yIu-cy-7ZU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6nv-Da-T47"/>
                     </view>
                     <connections>
                         <outlet property="dressing_image" destination="mlG-wF-HYp" id="IcP-en-RZ3"/>
-                        <outlet property="eyewearImage" destination="KTK-8L-acW" id="PpU-3I-DTO"/>
                         <outlet property="eyewear_image" destination="KTK-8L-acW" id="IG6-kn-TCz"/>
-                        <outlet property="hatImage" destination="lDI-kK-yig" id="Zq6-5i-edW"/>
-                        <outlet property="headwearImage" destination="lDI-kK-yig" id="TO6-ab-WeB"/>
                         <outlet property="headwear_image" destination="lDI-kK-yig" id="1aX-fq-Aqf"/>
-                        <outlet property="neckwearImage" destination="BUy-mw-98x" id="yes-Kl-8lD"/>
                         <outlet property="neckwear_image" destination="BUy-mw-98x" id="Jt8-dj-lz7"/>
                     </connections>
                 </viewController>
@@ -124,12 +130,11 @@
         <image name="TableBackground" width="1952" height="1276"/>
         <image name="arrow_blue_left" width="55" height="68"/>
         <image name="arrow_blue_right" width="51" height="68"/>
+        <image name="arrow_left" width="27" height="41"/>
         <image name="dressing_stand" width="1200" height="511"/>
         <image name="pet_default" width="222" height="383"/>
         <image name="screen_label" width="375" height="92"/>
         <image name="shop_rect" width="279" height="142"/>
         <image name="shop_rect_orange" width="131" height="47"/>
-        <image name="square_lightBlue" width="112" height="51"/>
     </resources>
 </document>
-

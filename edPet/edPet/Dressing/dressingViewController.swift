@@ -28,12 +28,12 @@ UIViewController {
     }
     
     override func viewDidLoad() {
+        userAccessories = Singleton.sharedInstance.accessories
         super.viewDidLoad()
         num_items = userAccessories.count
         curr_indx = 0;
-        if (num_items > 0) {
-            dressing_image.image = UIImage(named: userAccessories[0])
-        }
+        
+        dressing_image.image = UIImage(named: userAccessories[0])
     }
     
     
@@ -71,15 +71,14 @@ UIViewController {
     
     @IBAction func selectPiece(_ sender: Any) {
         let accessory = userAccessories[curr_indx]
-        let index = Int(String(accessory.last!))! - 1
+        let numDigits = accessory.count % 10
+        let endIndex = accessory.index(accessory.endIndex, offsetBy: -numDigits)
+        let digits = accessory.substring(from: endIndex)
+        let index = Int(digits)! - 1
         let accesory_type = shop_image_types[index]
         if(accesory_type == "head") {headwear_image.image = UIImage(named: accessory)}
         if(accesory_type == "eye") {eyewear_image.image = UIImage(named: accessory)}
         if(accesory_type == "neck") {neckwear_image.image = UIImage(named: accessory)}
-    }
-    
-    @IBAction func takePhoto(_ sender: Any) {
-        captureScreenshot()
     }
     
     
