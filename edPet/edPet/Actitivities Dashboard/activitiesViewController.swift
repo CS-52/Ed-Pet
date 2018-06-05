@@ -67,6 +67,7 @@ class activitiesViewController: UIViewController, UITableViewDataSource, UITable
         }
         cell.time.text = String(activity.time_estimate) + " min"
         cell.previewImage?.image = activity.previewImage
+        cell.completionImage?.image = activity.completionImage;
         
         return cell
     }
@@ -78,15 +79,15 @@ class activitiesViewController: UIViewController, UITableViewDataSource, UITable
         let solar = UIImage(named: "solar")
         let scuba = UIImage(named: "scuba")
         
-        guard let activity1 = Activity(title: "History of the Alamo", days_until_due: 5, completion: false, time_estimate: 10, previewImage: alamo) else {
+        guard let activity1 = Activity(title: "History of the Alamo", days_until_due: 5, completion: true, time_estimate: 10, previewImage: alamo) else {
             fatalError("can't make activity 1")
         }
         
-        guard let activity2 = Activity(title: "Our Solar System", days_until_due: 8, completion: false, time_estimate: 15, previewImage: solar) else {
+        guard let activity2 = Activity(title: "Our Solar System", days_until_due: 8, completion: true, time_estimate: 15, previewImage: solar) else {
             fatalError("can't make activity 2")
         }
         
-        guard let activity3 = Activity(title: "Underwater Exploration", days_until_due: 8, completion: false, time_estimate: 15, previewImage: scuba) else {
+        guard let activity3 = Activity(title: "Underwater Exploration", days_until_due: 8, completion: false, time_estimate: 35, previewImage: scuba) else {
             fatalError("can't make activity")
         }
         

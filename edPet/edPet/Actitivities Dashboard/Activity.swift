@@ -21,6 +21,7 @@ class Activity: NSObject, NSCoding/*: CustomStringConvertible */{
     var completion: Bool!
     var time_estimate: Int!
     var previewImage: UIImage?
+    var completionImage: UIImage?
     
     //MARK: Archiving Paths
     static let DocumentsDirectory = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first!
@@ -40,6 +41,13 @@ class Activity: NSObject, NSCoding/*: CustomStringConvertible */{
         self.completion = completion
         self.time_estimate = time_estimate
         self.previewImage = previewImage
+        
+        let complet = UIImage(named: "greencheck")
+        if(completion){
+            completionImage = complet;
+        }
+        
+        
     }
     
     func encode(with aCoder: NSCoder) {
