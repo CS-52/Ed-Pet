@@ -24,11 +24,11 @@
 		AEBC951E2086DF970025A52C /* shopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBC951D2086DF970025A52C /* shopViewController.swift */; };
 		AEE4B21F20C608B5008E871F /* dressing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEE4B21E20C608B5008E871F /* dressing.storyboard */; };
 		AEE4B22120C608EB008E871F /* dressingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE4B22020C608EB008E871F /* dressingViewController.swift */; };
-		AEE4B22720C6096C008E871F /* petmovie.gif in Resources */ = {isa = PBXBuildFile; fileRef = AEE4B22220C6096B008E871F /* petmovie.gif */; };
-		AEE4B22820C6096C008E871F /* homescreenVideo.GIF in Resources */ = {isa = PBXBuildFile; fileRef = AEE4B22320C6096B008E871F /* homescreenVideo.GIF */; };
-		AEE4B22920C6096C008E871F /* swift+gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE4B22420C6096C008E871F /* swift+gif.swift */; };
-		AEE4B22A20C6096C008E871F /* homescreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE4B22520C6096C008E871F /* homescreenViewController.swift */; };
-		AEE4B22B20C6096C008E871F /* Home Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEE4B22620C6096C008E871F /* Home Screen.storyboard */; };
+		D562DFDC20C638C400E80B88 /* Home Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D562DFDB20C638C300E80B88 /* Home Screen.storyboard */; };
+		D562DFDE20C638DC00E80B88 /* homescreenVideo.GIF in Resources */ = {isa = PBXBuildFile; fileRef = D562DFDD20C638DC00E80B88 /* homescreenVideo.GIF */; };
+		D562DFE020C638E300E80B88 /* homescreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D562DFDF20C638E300E80B88 /* homescreenViewController.swift */; };
+		D562DFE220C638EB00E80B88 /* petmovie.gif in Resources */ = {isa = PBXBuildFile; fileRef = D562DFE120C638EA00E80B88 /* petmovie.gif */; };
+		D562DFE420C638F000E80B88 /* swift+gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = D562DFE320C638EF00E80B88 /* swift+gif.swift */; };
 		D5E0F41D207C288400501C09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E0F41C207C288400501C09 /* AppDelegate.swift */; };
 		D5E0F41F207C288400501C09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E0F41E207C288400501C09 /* ViewController.swift */; };
 		D5E0F422207C288400501C09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5E0F420207C288400501C09 /* Main.storyboard */; };
@@ -77,11 +77,11 @@
 		AEBC951D2086DF970025A52C /* shopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopViewController.swift; sourceTree = "<group>"; };
 		AEE4B21E20C608B5008E871F /* dressing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = dressing.storyboard; sourceTree = "<group>"; };
 		AEE4B22020C608EB008E871F /* dressingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dressingViewController.swift; sourceTree = "<group>"; };
-		AEE4B22220C6096B008E871F /* petmovie.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = petmovie.gif; path = "../../../../../Home Screen/petmovie.gif"; sourceTree = "<group>"; };
-		AEE4B22320C6096B008E871F /* homescreenVideo.GIF */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = homescreenVideo.GIF; path = "../../../../../Home Screen/homescreenVideo.GIF"; sourceTree = "<group>"; };
-		AEE4B22420C6096C008E871F /* swift+gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "swift+gif.swift"; path = "../../../../../Home Screen/swift+gif.swift"; sourceTree = "<group>"; };
-		AEE4B22520C6096C008E871F /* homescreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = homescreenViewController.swift; path = "../../../../../Home Screen/homescreenViewController.swift"; sourceTree = "<group>"; };
-		AEE4B22620C6096C008E871F /* Home Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Home Screen.storyboard"; path = "../../../../../Home Screen/Home Screen.storyboard"; sourceTree = "<group>"; };
+		D562DFDB20C638C300E80B88 /* Home Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Home Screen.storyboard"; sourceTree = "<group>"; };
+		D562DFDD20C638DC00E80B88 /* homescreenVideo.GIF */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = homescreenVideo.GIF; sourceTree = "<group>"; };
+		D562DFDF20C638E300E80B88 /* homescreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homescreenViewController.swift; sourceTree = "<group>"; };
+		D562DFE120C638EA00E80B88 /* petmovie.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = petmovie.gif; sourceTree = "<group>"; };
+		D562DFE320C638EF00E80B88 /* swift+gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "swift+gif.swift"; sourceTree = "<group>"; };
 		D5E0F419207C288400501C09 /* edPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = edPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5E0F41C207C288400501C09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5E0F41E207C288400501C09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -163,11 +163,11 @@
 		AEBC95132086DD8D0025A52C /* Home Screen */ = {
 			isa = PBXGroup;
 			children = (
-				AEE4B22620C6096C008E871F /* Home Screen.storyboard */,
-				AEE4B22320C6096B008E871F /* homescreenVideo.GIF */,
-				AEE4B22520C6096C008E871F /* homescreenViewController.swift */,
-				AEE4B22220C6096B008E871F /* petmovie.gif */,
-				AEE4B22420C6096C008E871F /* swift+gif.swift */,
+				D562DFDB20C638C300E80B88 /* Home Screen.storyboard */,
+				D562DFE320C638EF00E80B88 /* swift+gif.swift */,
+				D562DFDF20C638E300E80B88 /* homescreenViewController.swift */,
+				D562DFDD20C638DC00E80B88 /* homescreenVideo.GIF */,
+				D562DFE120C638EA00E80B88 /* petmovie.gif */,
 			);
 			path = "Home Screen";
 			sourceTree = "<group>";
@@ -378,11 +378,11 @@
 				AEBC95112086DD6D0025A52C /* Activities Dashboard.storyboard in Resources */,
 				D5E0F427207C288400501C09 /* LaunchScreen.storyboard in Resources */,
 				AE704D5E207DAD8E00116E8C /* GoogleService-Info.plist in Resources */,
-				AEE4B22720C6096C008E871F /* petmovie.gif in Resources */,
+				D562DFE220C638EB00E80B88 /* petmovie.gif in Resources */,
+				D562DFDE20C638DC00E80B88 /* homescreenVideo.GIF in Resources */,
 				D5E0F424207C288400501C09 /* Assets.xcassets in Resources */,
 				D5E0F422207C288400501C09 /* Main.storyboard in Resources */,
-				AEE4B22B20C6096C008E871F /* Home Screen.storyboard in Resources */,
-				AEE4B22820C6096C008E871F /* homescreenVideo.GIF in Resources */,
+				D562DFDC20C638C400E80B88 /* Home Screen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,12 +492,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEE4B22A20C6096C008E871F /* homescreenViewController.swift in Sources */,
+				D562DFE420C638F000E80B88 /* swift+gif.swift in Sources */,
+				D562DFE020C638E300E80B88 /* homescreenViewController.swift in Sources */,
 				AE17E87520995CE40064813D /* Activity.swift in Sources */,
 				AEBC951E2086DF970025A52C /* shopViewController.swift in Sources */,
 				AEBC95152086DDBC0025A52C /* loginViewController.swift in Sources */,
 				D5E0F41F207C288400501C09 /* ViewController.swift in Sources */,
-				AEE4B22920C6096C008E871F /* swift+gif.swift in Sources */,
 				AEBC95192086DE630025A52C /* activitiesViewController.swift in Sources */,
 				D5F8D29720BA291D005F02A5 /* Singleton.swift in Sources */,
 				D5E0F41D207C288400501C09 /* AppDelegate.swift in Sources */,
